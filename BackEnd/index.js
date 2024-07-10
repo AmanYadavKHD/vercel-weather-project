@@ -25,7 +25,7 @@ console.log(req.body.cityName);
             const image = "https://openweathermap.org/img/wn/" + weatherData.weather[0].icon + "@2x.png"
 
             res.write("<h1>The weather is currently : " + weatherData.weather[0].description + "</h1>");
-            res.write("The temperature in london is : " + temp);
+            res.write("The temperature in city is : " + temp);
             res.write("<img src= " + image + ">");
             res.send();
 
